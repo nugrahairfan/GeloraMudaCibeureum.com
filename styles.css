@@ -1,0 +1,258 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: rgb(0, 100, 0); color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 40px; position: relative;
+}
+
+.logo {
+    width: 10%;
+}
+.txt h1 {
+    color: #fff; text-decoration: none; font-size: 15px; font-weight: bold;
+}
+
+.menu-icon {
+    display: none; cursor: pointer; font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none; display: flex;
+    font-size: 13px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff; text-decoration: none; padding: 10px 15px; display: block;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.nav-links .active {
+    color: black; background-color: white; transition: .5s;
+}
+
+/* DROPDOWN */
+.dropdown {
+    display: none; position: absolute; top: 100%; left: 0; background-color: rgb(0, 100, 0); list-style: none;
+    padding: 0;
+}
+
+.dropdown li a {
+    padding: 10px 15px;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+/* MAIN */
+main {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+main section .konten h1 {
+    color: black; font-size: 18px;
+}
+
+main section p {
+    font-size: 15px;
+}
+
+/* ESPONSIVE */
+@media (max-width: 768px) {
+    /* HEADER */
+    header .navbar .logo img {
+        width: 40px; height: 40px; display: flex;
+    }
+
+    /* NAVBAR */
+    .text h1 {
+        font-size: 16px; margin-right: 50px; display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    #toggle-menu {
+        display: none;
+    }
+
+    .nav-links {
+        display: none; flex-direction: column; width: 100%; background-color: rgb(0, 100, 0); position: absolute;
+        top: 60px; left: 0; border-top: 2px solid white;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;  border-bottom: 2px solid white;
+    }
+
+    #toggle-menu:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    /* DROPDOWN */
+    .dropdown {
+        position: static;
+    }
+
+    .dropdown li a {
+        text-align: center;
+    }
+
+    /* Banner */
+    .banner {
+        width: 80% ;text-align: center; margin-top: 20px; margin-left: 40px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    /* PROFIL */
+    .profil {
+        font-size: 14px; width: 90%; line-height: 1.5; margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .box1 {
+        width: 19%; height: 65px;
+    }
+
+    .box .box1 img{
+        width: 65px;
+    }
+
+    .box2 {
+        width: 29%; height: 65px;
+    }
+
+    .box3 {
+        width: 2%; height: 65px;
+    }
+
+    .box4 {
+        width: 50%; height: 65px;
+    }
+
+    /* MAIN */
+    main section .konten {
+        padding: 2em; margin-top: 25px;
+    }
+
+    main section .konten h1 {
+        border-bottom: 2px solid black;
+    }
+
+    main section p {
+        font-size: 14px; margin-top: 10px;
+    }
+
+    /* Dokumen */
+    main section .dokumen {
+        padding: 2em;
+    }
+    .dokumen h1 {
+        font-size: 20px; text-align: center;
+    }
+
+    .dokumen h2 {
+        font-size: 20px; border-bottom: 2px solid black; text-align: center;
+    }
+
+    .dokumen ul li {
+        list-style: none; border-bottom: 2px solid black; padding: 10px;
+    }
+
+    .dokumen ul li a {
+        text-decoration: none; color: black; display: flex;
+    }
+
+    /* Visi & Misi */
+    main section .visimisi {
+        padding: 2em;
+    }
+    
+    .visimisi h1{
+        font-size: 20px; text-align: center;
+    }
+
+    .visimisi .garis {
+        border-bottom: 2px solid black;
+    }
+
+    .visimisi h2 {
+        font-size: 18px;
+    }
+
+    .visimisi h3 {
+        font-size: 14px;
+    }
+
+    /* Program Kerja */
+    main section .program {
+        padding: 2em;
+    }
+
+    .program h1{
+        font-size: 20px; text-align: center;
+    }
+
+    .program .garis {
+        border-bottom: 2px solid black;
+    }
+
+    .program h2 {
+        font-size: 18px;
+    }
+
+    .program h3 {
+        font-size: 14px;
+    }
+
+    /* Struktur Organisasi */
+    .struktur {
+        width: 100%; margin-top: 20px;
+    }
+
+    .struktur img {
+        width: 100%; margin-top: 10px;
+    }
+
+    .struktur h1{
+        font-size: 20px; text-align: center;
+    }
+
+    .struktur .garis {
+        border-bottom: 2px solid black; width: 90%; margin-left: 20px;
+    }
+}
